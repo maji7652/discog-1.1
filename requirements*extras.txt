@@ -1,0 +1,42 @@
+Optional (for Extra Requirements)
+If you plan to use optional features, you may need to install additional packages:
+
+Voice: For voice support (if applicable):
+
+PyNaCl version 1.3.0 through 1.6.
+Install via pip:
+bash
+Copy code
+pip install PyNaCl>=1.3.0,<1.6
+Documentation: For building documentation:
+
+sphinx==4.4.0
+sphinxcontrib_trio==1.1.2
+sphinxcontrib-websupport
+typing-extensions>=4.3,<5
+Install via pip:
+bash
+Copy code
+pip install sphinx==4.4.0 sphinxcontrib_trio==1.1.2 sphinxcontrib-websupport typing-extensions>=4.3,<5
+Speed: For performance improvements:
+
+orjson>=3.5.4
+aiodns>=1.1
+Brotli
+cchardet==2.1.7 (for Python versions < 3.10)
+Install via pip:
+bash
+Copy code
+pip install orjson>=3.5.4 aiodns>=1.1 Brotli cchardet==2.1.7; python_version < "3.10"
+Test: For testing:
+
+coverage[toml]
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
+typing-extensions>=4.3,<5
+Install via pip:
+bash
+Copy code
+pip install coverage[toml] pytest pytest-asyncio pytest-cov pytest-mock typing-extensions>=4.3,<5
